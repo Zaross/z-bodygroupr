@@ -12,7 +12,7 @@ function BODYMAN:Log( msg )
 	BodygroupManagerLog( msg )
 end
 
-function PlayerSpawnBodygroups( ply )  
+function PlayerSpawnBodygroups( ply )   
 
 	if not ply:Alive() then return end
 
