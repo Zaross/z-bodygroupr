@@ -23,7 +23,7 @@ function PlayerSpawnBodygroups( ply )
 	timer.Simple(1, function() 
 		if ply.LastJob_bodygroupr == job.command then
 			if table.HasValue( ( type(job.model) == "table" and job.model or {} ), ( ply.LastPlayermodel or "" ) ) then
-				ply:SetModel( ply.LastPlayermodel or ply:GetModel() ) 
+				ply:SetModel( ply.LastPlayermodel or ply:GetModel() )  
 			end
 		end
 	end)
