@@ -12,7 +12,7 @@ function BODYMAN:Log( msg )
 	BodygroupManagerLog( msg )
 end
 
-function PlayerSpawnBodygroups( ply )
+function PlayerSpawnBodygroups( ply ) 
 
 	if not ply:Alive() then return end
 
@@ -20,7 +20,7 @@ function PlayerSpawnBodygroups( ply )
 	local skins = {}
 	local bodygroups = {}
 
-	timer.Simple(1, function()
+	timer.Simple(1, function() 
 		if ply.LastJob_bodygroupr == job.command then
 			if table.HasValue( ( type(job.model) == "table" and job.model or {} ), ( ply.LastPlayermodel or "" ) ) then
 				ply:SetModel( ply.LastPlayermodel or ply:GetModel() )
