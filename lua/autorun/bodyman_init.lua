@@ -2,7 +2,7 @@ print("Initializing Darkrp Bodygroups Manager")
 
 BODYMAN = {}
 
-if SERVER then
+if SERVER then 
 	include("bodyman/bodyman_server.lua")
 	include("bodyman/bodyman_server_hooks.lua")
 	include("bodyman/bodyman_config.lua")
